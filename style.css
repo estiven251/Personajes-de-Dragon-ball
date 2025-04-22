@@ -1,95 +1,177 @@
-body{
-    background-image: url(Img_fondo/Ankoku_Dragon_Ball.webp);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: italic;
-    width: 100vw;
-    height: 100vh;
-
+/*Estilos generales para el cuerpo de la página.
+ */
+ body {
+  /* colocamos una imagen de fondo */
+  background-image: url(Img_fondo/Ankoku_Dragon_Ball.webp);
+  /* lo usamos para evitar que la imagen de fondo se repita*/
+  background-repeat: no-repeat;
+  /* Centramos la imagen de fondo */
+  background-position: center;
+  /* Fijamos la imagen de fondo para evitar que se desplace */
+  background-attachment: fixed;
+  /* Escala la imagen de fondo para cubrir todo el viewport */
+  background-size: cover;
+  /* Establece el tamaño de la fuente base */
+  font-size: 1.2rem;
+  /* Establece el grosor de la fuente */
+  font-weight: 400;
+  /* Establece el estilo de la fuente a itálica */
+  font-style: italic;
+  /* Establece el ancho del viewport */
+  width: 100vw;
+  /* Establece la altura del viewport */
+  height: 100vh;
 }
-.contenido{
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: rgba(41, 245, 0, 0.5);
-}
-.card {
-    width: 340px; 
-    height: 660px;
-    border: solid; 
-    border-radius: 10px; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 20px; 
-    background-color: rgb(127, 208, 255);
-    display: inline-block;
-  }
-
-  .card img{
-    width: 85%;
-    height: 85%;
-    padding: 0.2em;
-    margin: 0.3em;
-    object-fit: contain;
-  }
-.titulo{
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-#color_hexadecimal1{
-  background-color: #34b11b;
-}
-#rgb1{
-  background-color: rgb(48, 56, 121);
-}
-#rgb2{
-  background-color: rgb(255, 100, 100);
-}
-#rgb3{  
-  background-color: rgb(145, 255, 150);
-}
-#rgb4{
-    background-color: rgb(243, 229, 152);
-}
-#rgb5{
-    background-color: rgb(28, 60, 77);
-}
-#lineal{
-  background: linear-gradient(to right, #1c1083, #ff6464);
-  
-}
-#radial{
-  background: radial-gradient(circle, #34b11b, #ff6464, #4345c4);
-}
-#estilo_texto{
-  text-transform: capitalize;
-  letter-spacing: initial;
-  text-shadow: 3px 3px 3px #ce340e;
-}
-
-.caja{
-  text-align: center;
-  border: 0.2 solid;
-  background-color: white;
-  width: 340px; 
-  height: 340px;
+/* Estilos para el contenedor principal del contenido.*/
+.contenido {
+  /* Establece el ancho máximo del contenido */
+  max-width: 1400px;
+  /* Centra el contenido horizontalmente */
   margin: 0 auto;
+  /* Establece el color de fondo con transparencia */
+  background-color: rgba(41, 245, 0, 0.5); /* Verde con 50% de opacidad */
+}
 
+/*Estilos para la tarjeta individual.*/
+.card {
+  /* Establece el ancho de la tarjeta */
+  width: 340px;
+  /* Establece la altura de la tarjeta */
+  height: 660px;
+  /* Añade un borde sólido */
+  border: solid;
+  /* Redondea las esquinas del borde */
+  border-radius: 10px;
+  /* Añade una sombra suave */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Añade un margen inferior para separar las tarjetas */
+  margin-bottom: 20px;
+  /* Establece el color de fondo de la tarjeta */
+  background-color: rgb(127, 208, 255); /* Azul claro */
+  /* Permite que las tarjetas se muestren en línea horizontalmente */
+  display: inline-block;
 }
-.px{
-   font-size: 20px; /* lo utilizamos para definir tamaños absoluto a elemnetos*/
+
+/*Estilos para la imagen dentro de la tarjeta.*/
+.card img {
+  /* Establece el ancho de la imagen relativo al contenedor */
+  width: 85%;
+  /* Establece la altura de la imagen relativa al contenedor */
+  height: 85%;
+  /* Añade un pequeño espacio interno alrededor de la imagen */
+  padding: 0.2em;
+  /* Añade un pequeño margen alrededor de la imagen */
+  margin: 0.3em;
+  /* Asegura que la imagen se ajuste dentro de su contenedor manteniendo su relación de aspecto */
+  object-fit: contain;
 }
-.em{
-  font-size: 1.4em; /* lo utilizamos para expresar los tamaños de los elemetos relativos al tamaño de fuente de un elemento padre*/
+
+/*Estilos para el título principal.*/
+.titulo {
+  /* Establece el tamaño de la fuente del título */
+  font-size: 40px;
+  /* Establece el color del texto del título */
+  color: rgb(0, 0, 0); /* Negro */
+  /* Centra el texto del título horizontalmente */
+  text-align: center;
 }
-.rem{
-    font-size: 1.2rem; /*sirve para medir medidas al tamaño fuente del elemento raiz */
+
+/*Estilo para el elemento con el ID 'color_hexadecimal1'.
+ Establece el color de fondo utilizando un valor hexadecimal.*/
+#color_hexadecimal1 {
+  background-color: #34b11b; /* Verde */
 }
-.caja img{
+
+/*Estilo para el elemento con el ID 'rgb1'.
+ Establece el color de fondo utilizando un valor RGB.*/
+#rgb1 {
+  background-color: rgb(48, 56, 121); /* Azul oscuro */
+}
+
+/*Estilo para el elemento con el ID 'rgb2'.
+ Establece el color de fondo utilizando un valor RGB.*/
+#rgb2 {
+  background-color: rgb(255, 100, 100); /* Rojo */
+}
+
+/*Estilo para el elemento con el ID 'rgb3'.
+ Establece el color de fondo utilizando un valor RGB.*/
+#rgb3 {
+  background-color: rgb(145, 255, 150); /* Verde claro */
+}
+
+/*Estilo para el elemento con el ID 'rgb4'.
+ Establece el color de fondo utilizando un valor RGB.*/
+#rgb4 {
+  background-color: rgb(243, 229, 152); /* Amarillo pálido */
+}
+
+/*Estilo para el elemento con el ID 'rgb5'.
+Establece el color de fondo utilizando un valor RGB. */
+#rgb5 {
+  background-color: rgb(28, 60, 77); /* Azul grisáceo oscuro */
+}
+
+/* Estilo para el elemento con el ID 'lineal'.
+ Establece un fondo con un gradiente lineal que va de izquierda a derecha.*/
+#lineal {
+  background: linear-gradient(to right, #1c1083, #ff6464); /* De morado oscuro a rojo */
+}
+
+/*Estilo para el elemento con el ID 'radial'.
+Establece un fondo con un gradiente radial con forma de círculo.*/
+#radial {
+  background: radial-gradient(circle, #34b11b, #ff6464, #4345c4); /* Verde, rojo y azul */
+}
+
+/* Estilos para el elemento con el ID 'estilo_texto'.
+ Aplica transformaciones y efectos al texto.*/
+#estilo_texto {
+  /* Convierte la primera letra de cada palabra a mayúscula */
+  text-transform: capitalize;
+  /* Restablece el espaciado entre letras al valor inicial */
+  letter-spacing: initial;
+  /* Añade una sombra al texto */
+  text-shadow: 3px 3px 3px #ce340e; /* Sombra naranja */
+}
+
+/*Estilos para la caja contenedora.*/
+.caja {
+  /* Centra el contenido de la caja horizontalmente */
+  text-align: center;
+  /* Añade un borde delgado sólido */
+  border: 0.2 solid;
+  /* Establece el color de fondo de la caja */
+  background-color: white;
+  /* Establece el ancho de la caja */
+  width: 340px;
+  /* Establece la altura de la caja */
+  height: 340px;
+  /* Centra la caja horizontalmente */
+  margin: 0 auto;
+}
+
+/* Estilos para el texto con tamaño de fuente definido en píxeles.*/
+.px {
+  font-size: 20px; /* Tamaño de fuente absoluto de 20 píxeles */
+}
+
+/*Estilos para el texto con tamaño de fuente definido en ems.
+El tamaño es relativo al tamaño de fuente del elemento padre. */
+.em {
+  font-size: 1.4em; /* 1.4 veces el tamaño de fuente del elemento padre */
+}
+
+/* Estilos para el texto con tamaño de fuente definido en rems.
+ El tamaño es relativo al tamaño de fuente del elemento raíz (html).*/
+.rem {
+  font-size: 1.2rem; /* 1.2 veces el tamaño de fuente del elemento raíz */
+}
+
+/*Estilos para la imagen dentro de la caja. */
+.caja img {
+  /* Asegura que la imagen no exceda el ancho de su contenedor */
   max-width: 100%;
+  /* Permite que la altura de la imagen se ajuste proporcionalmente */
   height: auto;
 }
