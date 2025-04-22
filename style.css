@@ -1,0 +1,95 @@
+body{
+    background-image: url(Img_fondo/Ankoku_Dragon_Ball.webp);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 100vw;
+    height: 100vh;
+
+}
+.contenido{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgba(41, 245, 0, 0.5);
+}
+.card {
+    width: 340px; 
+    height: 660px;
+    border: solid; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    background-color: rgb(127, 208, 255);
+    display: inline-block;
+  }
+
+  .card img{
+    width: 85%;
+    height: 85%;
+    padding: 0.2em;
+    margin: 0.3em;
+    object-fit: contain;
+  }
+.titulo{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#color_hexadecimal1{
+  background-color: #34b11b;
+}
+#rgb1{
+  background-color: rgb(48, 56, 121);
+}
+#rgb2{
+  background-color: rgb(255, 100, 100);
+}
+#rgb3{  
+  background-color: rgb(145, 255, 150);
+}
+#rgb4{
+    background-color: rgb(243, 229, 152);
+}
+#rgb5{
+    background-color: rgb(28, 60, 77);
+}
+#lineal{
+  background: linear-gradient(to right, #1c1083, #ff6464);
+  
+}
+#radial{
+  background: radial-gradient(circle, #34b11b, #ff6464, #4345c4);
+}
+#estilo_texto{
+  text-transform: capitalize;
+  letter-spacing: initial;
+  text-shadow: 3px 3px 3px #ce340e;
+}
+
+.caja{
+  text-align: center;
+  border: 0.2 solid;
+  background-color: white;
+  width: 340px; 
+  height: 340px;
+  margin: 0 auto;
+
+}
+.px{
+   font-size: 20px; /* lo utilizamos para definir tamaños absoluto a elemnetos*/
+}
+.em{
+  font-size: 1.4em; /* lo utilizamos para expresar los tamaños de los elemetos relativos al tamaño de fuente de un elemento padre*/
+}
+.rem{
+    font-size: 1.2rem; /*sirve para medir medidas al tamaño fuente del elemento raiz */
+}
+.caja img{
+  max-width: 100%;
+  height: auto;
+}
